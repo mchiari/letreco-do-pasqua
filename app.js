@@ -12,7 +12,7 @@ const rows = 6;
 const columns = 5;
 let currentRow = 0;
 let currentColumn = 0;
-let letreco = 'INSTA';
+let letreco = 'SANTO';
 let letrecoMap = {};
 for (let index = 0; index < letreco.length; index++) {
 	letrecoMap[letreco[index]] = index;
@@ -144,7 +144,7 @@ document.onkeydown = function (evt) {
 	evt = evt || window.evt;
 	if (evt.key === 'Enter') {
 		checkGuess();
-	} else if ((evt.key === 'Backspace')) {
+	} else if (evt.key === 'Backspace') {
 		handleBackspace();
 	} else {
 		handleKeyboardOnClick(evt.key.toUpperCase());
