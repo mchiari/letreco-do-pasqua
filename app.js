@@ -61,7 +61,7 @@ const checkGuess = () => {
 	}
 
 	if (guess === letreco) {
-		window.alert('BOA JUJU EXPLODIU');
+		window.alert('BOA EXPLODIU');
 		return;
 	} else {
 		if (currentRow === rows - 1) {
